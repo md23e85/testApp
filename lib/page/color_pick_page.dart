@@ -31,9 +31,7 @@ class _MainPageState extends State<MainPage> {
                     return _screen(context, state.color);
                   }
                 })), onTap: (){
-          setState(() {
-            _bloc.dispatch(UpdatePickEvent());
-          });
+          _bloc.dispatch(UpdatePickEvent());
         }));
   }
 }
